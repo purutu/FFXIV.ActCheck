@@ -1,11 +1,13 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace FFActCheck
 {
     public partial class MainForm : Form
     {
+        private string _rundir;
         private string _appdata;
         private string _basedir;
 
@@ -17,11 +19,12 @@ namespace FFActCheck
             InitializeComponent();
 
 #if DEBUG
-            var prgdir = @"D:\FF14\act";
+            var prgdir = @"D:\FF14\act-20190916-full\ACT";
 #else
             var prgdir = Environment.CurrentDirectory;
 #endif
 
+            _rundir = prgdir;
             _appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
             _basedir = Path.Combine(prgdir, "AppData");
 
@@ -46,8 +49,8 @@ namespace FFActCheck
 
         private void BtnSetting_Click(object sender, EventArgs e)
         {
-            var r = MessageBox.Show(this, 
-                "ACT는 끄고 누르시는거 맞습니까?!!\n\nFF14는 안꺼도 됩니다", "확인해야함미다!", 
+            var r = MessageBox.Show(this,
+                "ACT는 끄고 누르시는거 맞습니까?!!\n\nFF14는 안꺼도 됩니다", "확인해야함미다!",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
             if (r == DialogResult.Yes)
@@ -73,6 +76,9 @@ namespace FFActCheck
             LstResult.Items.Add(MakeListViewItem(_ok_hoz, "Hojoring 연결", rsn_ayo));
 
             //
+#if DEBUG
+            BtnSetting.Enabled = true;
+#else
             if (ok_act && ok_ayo)
                 BtnSetting.Enabled = !_ok_act || !_ok_hoz;
             else
@@ -80,6 +86,7 @@ namespace FFActCheck
                 BtnSetting.Enabled = false;
                 BtnSetting.Text = "ACT가 이상합니다\n다시 설치하세요";
             }
+#endif
         }
 
         private void SettingUp()
@@ -91,6 +98,10 @@ namespace FFActCheck
                 MakeJunction(Path.Combine(_basedir, "anoyetta"), Path.Combine(_appdata, "anoyetta"));
 
             TestEnvironment();
+
+            if (chkConfig.Checked)
+                ConfigTests();
+
             LstResult.Items.Add(MakeListViewItem(true, "설정 결과", "처리했습니다"));
 
             BtnSetting.Enabled = false;
@@ -150,6 +161,55 @@ namespace FFActCheck
             }
 
             return false;
+        }
+
+        private bool ConfigTests()
+        {
+            string cfgdir = Path.Combine(_basedir, "Advanced Combat Tracker", "Config");
+
+            if (!Directory.Exists(cfgdir))
+            {
+                LstResult.Items.Add(MakeListViewItem(false, "설정 폴더", "설정 폴더를 찾을 수 없습니다"));
+                return false;
+            }
+
+            // %BASEDIR%
+            // %BASEUNIX%
+
+            string basedir = _rundir;
+            string baseunix = _rundir.Replace('\\', '/');
+
+            // global::FFActCheck.Properties.Resources.nanamo
+            //LstResult.Items.Add(MakeListViewItem(true, "설정 결과", "처리했습니다"));
+            string[] sress =
+            {
+                Properties.Resources.cfg_act,
+                Properties.Resources.cfg_fcp,
+                Properties.Resources.cfg_rmop,
+            };
+            string[] sfiles =
+            {
+                "Advanced Combat Tracker.config.xml",
+                "FFXIV_ACT_Plugin.config.xml",
+                "RainbowMage.OverlayPlugin.config.xml",
+            };
+
+            for (int i = 0; i < sress.Length; i++)
+            {
+                var txt = sress[i].Replace("%BASEDIR%", basedir).Replace("%BASEUNIX%", baseunix);
+
+                try
+                {
+                    File.WriteAllText(cfgdir + "\\" + sfiles[i], txt, System.Text.Encoding.UTF8);
+                    LstResult.Items.Add(MakeListViewItem(true, sfiles[i], "처리했습니다"));
+                }
+                catch (Exception)
+                {
+                    LstResult.Items.Add(MakeListViewItem(false, sfiles[i], "파일을 만들 수 없습니다"));
+                }
+            }
+
+            return true;
         }
     }
 }

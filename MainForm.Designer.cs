@@ -40,6 +40,7 @@
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label2 = new System.Windows.Forms.Label();
+            this.chkConfig = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // BtnTest
@@ -104,6 +105,7 @@
             this.LstResult.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
+            this.LstResult.HideSelection = false;
             this.LstResult.Location = new System.Drawing.Point(15, 63);
             this.LstResult.Name = "LstResult";
             this.LstResult.Size = new System.Drawing.Size(288, 210);
@@ -134,6 +136,18 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Nanamo Ul Namo";
             // 
+            // chkConfig
+            // 
+            this.chkConfig.AutoSize = true;
+            this.chkConfig.Checked = true;
+            this.chkConfig.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkConfig.Location = new System.Drawing.Point(324, 12);
+            this.chkConfig.Name = "chkConfig";
+            this.chkConfig.Size = new System.Drawing.Size(109, 17);
+            this.chkConfig.TabIndex = 8;
+            this.chkConfig.Text = "설정 파일 만들기";
+            this.chkConfig.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -141,6 +155,7 @@
             this.BackgroundImage = global::FFActCheck.Properties.Resources.nanamo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(624, 311);
+            this.Controls.Add(this.chkConfig);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LstResult);
             this.Controls.Add(this.TxtActPath);
@@ -169,6 +184,7 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.CheckBox chkConfig;
     }
 }
 

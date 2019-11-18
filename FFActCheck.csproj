@@ -120,5 +120,11 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\cfg-rmop.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfg-ping.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cfg-dfa.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,125 +1,110 @@
-<?xml version="1.0"?>
-<PluginConfig xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <IsVisible>true</IsVisible>
-  <IsClickThru>false</IsClickThru>
-  <OverlayPosition>
-    <X>20</X>
-    <Y>20</Y>
-  </OverlayPosition>
-  <OverlaySize>
-    <Width>300</Width>
-    <Height>300</Height>
-  </OverlaySize>
-  <SortKey>encdps</SortKey>
-  <SortType>NumericDescending</SortType>
-  <Overlays>
-    <Overlay Type="RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig">
-      <MiniParseOverlayConfig>
-        <Name>Mini Parse</Name>
-        <IsVisible>true</IsVisible>
-        <IsClickThru>false</IsClickThru>
-        <Position>
-          <X>470</X>
-          <Y>-3</Y>
-        </Position>
-        <Size>
-          <Width>1023</Width>
-          <Height>96</Height>
-        </Size>
-        <Url>https://bsides.github.io/horizoverlay</Url>
-        <MaxFrameRate>10</MaxFrameRate>
-        <GlobalHotkeyEnabled>false</GlobalHotkeyEnabled>
-        <GlobalHotkey>None</GlobalHotkey>
-        <GlobalHotkeyModifiers>None</GlobalHotkeyModifiers>
-        <GlobalHotkeyType>ToggleVisible</GlobalHotkeyType>
-        <IsLocked>true</IsLocked>
-        <SortKey>encdps</SortKey>
-        <SortType>NumericDescending</SortType>
-      </MiniParseOverlayConfig>
-    </Overlay>
-    <Overlay Type="Tamagawa.EnmityPlugin.EnmityOverlayConfig">
-      <EnmityOverlayConfig>
-        <Name>Enmity</Name>
-        <IsVisible>true</IsVisible>
-        <IsClickThru>true</IsClickThru>
-        <Position>
-          <X>1424</X>
-          <Y>746</Y>
-        </Position>
-        <Size>
-          <Width>249</Width>
-          <Height>185</Height>
-        </Size>
-        <Url>file:///%BASEUNIX%/AppPlug/OverlayPlugin/resources/EnmityPlugin/enmity_kim.html</Url>
-        <MaxFrameRate>10</MaxFrameRate>
-        <GlobalHotkeyEnabled>false</GlobalHotkeyEnabled>
-        <GlobalHotkey>None</GlobalHotkey>
-        <GlobalHotkeyModifiers>None</GlobalHotkeyModifiers>
-        <GlobalHotkeyType>ToggleVisible</GlobalHotkeyType>
-        <IsLocked>true</IsLocked>
-        <ScanInterval>100</ScanInterval>
-        <FollowFFXIVPlugin>false</FollowFFXIVPlugin>
-        <DisableTarget>false</DisableTarget>
-        <DisableAggroList>false</DisableAggroList>
-        <DisableEnmityList>false</DisableEnmityList>
-        <AggroListSortKey>none</AggroListSortKey>
-        <AggroListSortDecend>false</AggroListSortDecend>
-      </EnmityOverlayConfig>
-    </Overlay>
-    <Overlay Type="Cactbot.CactbotOverlayConfig">
-      <CactbotOverlayConfig>
-        <Name>C-Raid</Name>
-        <IsVisible>true</IsVisible>
-        <IsClickThru>true</IsClickThru>
-        <Position>
-          <X>359</X>
-          <Y>322</Y>
-        </Position>
-        <Size>
-          <Width>1203</Width>
-          <Height>498</Height>
-        </Size>
-        <Url>file:///%BASEUNIX%/AppPlug/OverlayPlugin/cactbot/ui/raidboss/raidboss.html</Url>
-        <MaxFrameRate>60</MaxFrameRate>
-        <GlobalHotkeyEnabled>false</GlobalHotkeyEnabled>
-        <GlobalHotkey>None</GlobalHotkey>
-        <GlobalHotkeyModifiers>None</GlobalHotkeyModifiers>
-        <GlobalHotkeyType>ToggleVisible</GlobalHotkeyType>
-        <IsLocked>true</IsLocked>
-        <LogUpdatesEnabled>true</LogUpdatesEnabled>
-        <DpsUpdatesPerSecond>3</DpsUpdatesPerSecond>
-        <RemoteVersionSeen>0.10.8</RemoteVersionSeen>
-        <UserConfigFile />
-      </CactbotOverlayConfig>
-    </Overlay>
-    <Overlay Type="Cactbot.CactbotOverlayConfig">
-      <CactbotOverlayConfig>
-        <Name>C-Fish</Name>
-        <IsVisible>true</IsVisible>
-        <IsClickThru>true</IsClickThru>
-        <Position>
-          <X>1442</X>
-          <Y>494</Y>
-        </Position>
-        <Size>
-          <Width>470</Width>
-          <Height>274</Height>
-        </Size>
-        <Url>file:///%BASEUNIX%/AppPlug/OverlayPlugin/cactbot/ui/fisher/fisher.html</Url>
-        <MaxFrameRate>60</MaxFrameRate>
-        <GlobalHotkeyEnabled>false</GlobalHotkeyEnabled>
-        <GlobalHotkey>None</GlobalHotkey>
-        <GlobalHotkeyModifiers>None</GlobalHotkeyModifiers>
-        <GlobalHotkeyType>ToggleVisible</GlobalHotkeyType>
-        <IsLocked>true</IsLocked>
-        <LogUpdatesEnabled>true</LogUpdatesEnabled>
-        <DpsUpdatesPerSecond>0</DpsUpdatesPerSecond>
-        <RemoteVersionSeen>0.11.0</RemoteVersionSeen>
-        <UserConfigFile />
-      </CactbotOverlayConfig>
-    </Overlay>
-  </Overlays>
-  <FollowLatestLog>false</FollowLatestLog>
-  <HideOverlaysWhenNotActive>true</HideOverlaysWhenNotActive>
-  <Version>0.3.4.0</Version>
-</PluginConfig>
+﻿{
+  "Overlays": [
+    {
+      "ActwsCompatibility": false,
+      "Name": "Mini Parse",
+      "IsVisible": true,
+      "IsClickThru": false,
+      "Position": "433, -1",
+      "Size": "1097, 64",
+      "Url": "https://bsides.github.io/horizoverlay/",
+      "MaxFrameRate": 10,
+      "GlobalHotkeyEnabled": false,
+      "GlobalHotkey": 0,
+      "GlobalHotkeyModifiers": 0,
+      "GlobalHotkeyType": 0,
+      "IsLocked": true,
+      "$type": "RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig, OverlayPlugin.Core, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "ActwsCompatibility": false,
+      "Name": "Enmity",
+      "IsVisible": true,
+      "IsClickThru": true,
+      "Position": "1424, 746",
+      "Size": "250, 200",
+      "Url": "file:///%BASEUNIX%/AppPlug/OverlayPlugin/resources/enmity/enmity_relative_simple.html",
+      "MaxFrameRate": 10,
+      "GlobalHotkeyEnabled": false,
+      "GlobalHotkey": 0,
+      "GlobalHotkeyModifiers": 0,
+      "GlobalHotkeyType": 0,
+      "IsLocked": true,
+      "$type": "RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig, OverlayPlugin.Core, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "ActwsCompatibility": false,
+      "Name": "C-Raid",
+      "IsVisible": true,
+      "IsClickThru": true,
+      "Position": "360, 322",
+      "Size": "1200, 500",
+      "Url": "file:///%BASEUNIX%/AppPlug/cactbot/ui/raidboss/raidboss.html",
+      "MaxFrameRate": 30,
+      "GlobalHotkeyEnabled": false,
+      "GlobalHotkey": 0,
+      "GlobalHotkeyModifiers": 0,
+      "GlobalHotkeyType": 0,
+      "IsLocked": true,
+      "$type": "RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig, OverlayPlugin.Core, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "ActwsCompatibility": false,
+      "Name": "C-Fish",
+      "IsVisible": true,
+      "IsClickThru": true,
+      "Position": "1442, 494",
+      "Size": "470, 274",
+      "Url": "file:///%BASEUNIX%/AppPlug/cactbot/ui/fisher/fisher.html",
+      "MaxFrameRate": 30,
+      "GlobalHotkeyEnabled": false,
+      "GlobalHotkey": 0,
+      "GlobalHotkeyModifiers": 0,
+      "GlobalHotkeyType": 0,
+      "IsLocked": true,
+      "$type": "RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig, OverlayPlugin.Core, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null"
+    },
+    {
+      "ActwsCompatibility": false,
+      "Name": "C-Eureka",
+      "IsVisible": true,
+      "IsClickThru": true,
+      "Position": "0, 20",
+      "Size": "322, 328",
+      "Url": "file:///%BASEUNIX%/AppPlug/cactbot/ui/eureka/eureka.html",
+      "MaxFrameRate": 30,
+      "GlobalHotkeyEnabled": false,
+      "GlobalHotkey": 0,
+      "GlobalHotkeyModifiers": 0,
+      "GlobalHotkeyType": 0,
+      "IsLocked": true,
+      "$type": "RainbowMage.OverlayPlugin.Overlays.MiniParseOverlayConfig, OverlayPlugin.Core, Version=0.10.1.0, Culture=neutral, PublicKeyToken=null"
+    }
+  ],
+  "FollowLatestLog": false,
+  "HideOverlaysWhenNotActive": true,
+  "HideOverlayDuringCutscene": true,
+  "ErrorReports": false,
+  "UpdateCheck": true,
+  "WSServerIP": "127.0.0.1",
+  "WSServerPort": 10501,
+  "WSServerSSL": false,
+  "WSServerRunning": false,
+  "Version": null,
+  "LastUpdateCheck": "2019-11-18T16:38:21.4585858+09:00",
+  "EventSourceConfigs": {
+    "MiniParse": {
+      "UpdateInterval": 1,
+      "EnmityIntervalMs": 100,
+      "SortKey": "encdps",
+      "SortDesc": false,
+      "UpdateDpsDuringImport": false
+    },
+    "CactbotESConfig": {
+      "OverlayData": {},
+      "RemoteVersionSeen": "0.0",
+      "UserConfigFile": "",
+      "WatchFileChanges": false
+    }
+  }
+}

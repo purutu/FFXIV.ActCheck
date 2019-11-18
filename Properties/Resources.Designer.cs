@@ -80,6 +80,30 @@ namespace FFActCheck.Properties {
         }
         
         /// <summary>
+        ///   &lt;?xml version=&quot;1.0&quot;?&gt;
+        ///&lt;PluginConfig xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
+        ///  &lt;IsVisible&gt;true&lt;/IsVisible&gt;
+        ///  &lt;IsClickThru&gt;false&lt;/IsClickThru&gt;
+        ///  &lt;OverlayPosition&gt;
+        ///    &lt;X&gt;20&lt;/X&gt;
+        ///    &lt;Y&gt;20&lt;/Y&gt;
+        ///  &lt;/OverlayPosition&gt;
+        ///  &lt;OverlaySize&gt;
+        ///    &lt;Width&gt;300&lt;/Width&gt;
+        ///    &lt;Height&gt;300&lt;/Height&gt;
+        ///  &lt;/OverlaySize&gt;
+        ///  &lt;SortKey&gt;encdps&lt;/SortKey&gt;
+        ///  &lt;SortType&gt;NumericDescending&lt;/SortType&gt;
+        ///  &lt;Overlays&gt;
+        ///    &lt;Overlay Type=&quot;RainbowMage.OverlayPlugin.Overlays.MiniParseO[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_dfa {
+            get {
+                return ResourceManager.GetString("cfg_dfa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;Config&gt;
         ///	&lt;SettingsSerializer&gt;
@@ -95,6 +119,25 @@ namespace FFActCheck.Properties {
         internal static string cfg_fcp {
             get {
                 return ResourceManager.GetString("cfg-fcp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;
+        ///&lt;Config&gt;
+        ///	&lt;SettingsSerializer&gt;
+        ///		&lt;CheckBox Name=&quot;chkDisableDamageShield&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;ComboBox Name=&quot;cboLanguage&quot; Value=&quot;English&quot; /&gt;
+        ///		&lt;ComboBox Name=&quot;cboParseFilter&quot; Value=&quot;Party&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;chkDisableCombinePets&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;chkScanHP&quot; Value=&quot;True&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;chkLogAllNetwork&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;chkDisableCombatLog&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;TextBox Name=&quot;txtLogFileDirectory&quot; Value[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_ping {
+            get {
+                return ResourceManager.GetString("cfg_ping", resourceCulture);
             }
         }
         

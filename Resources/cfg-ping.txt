@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Config>
+	<SettingsSerializer>
+		<NumericUpDown Name="numericUpDownX" Value="918" />
+		<NumericUpDown Name="numericUpDownY" Value="63" />
+		<TrackBar Name="trackBarOpacity" Value="0" />
+		<CheckBox Name="checkBoxClickthrough" Value="True" />
+		<CheckBox Name="checkBoxShowOverlay" Value="True" />
+		<CheckBox Name="checkBoxAutoHide" Value="False" />
+		<CheckBox Name="checkBoxCheckUpdate" Value="True" />
+		<CheckBox Name="checkBoxNotifyStableOnly" Value="False" />
+		<CheckBox Name="checkBoxAdvancedPing" Value="False" />
+		<NumericUpDown Name="numericUpDownRefreshInterval" Value="3" />
+		<String Name="Language" Value="en-US" />
+		<String Name="OverlayFont" Value="Arial, 11.2499981pt, style=Bold" />
+		<String Name="VersionIgnored" Value="" />
+		<String Name="ShortcutHide" Value="" />
+		<String Name="OverlayContentNormal" Value="{ping_ms_na} ({lost}%)" />
+		<String Name="OverlayContentNoData" Value="몰라용..." />
+	</SettingsSerializer>
+</Config>

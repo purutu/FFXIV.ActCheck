@@ -464,9 +464,11 @@
     <ActPlugins>
         <Plugin Enabled="True" Path="%BASEDIR%\AppData\Advanced Combat Tracker\Plugins\FFXIV_ACT_Plugin.dll" />
         <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\OverlayPlugin\OverlayPlugin.dll" />
+        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\cactbot\CactbotOverlay.dll" />
+        <Plugin Enabled="%CFGHOJORING%" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.TTSYukkuri.dll" />
+        <Plugin Enabled="False" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.UltraScouter.dll" />
+        <Plugin Enabled="False" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.SpecialSpellTimer.dll" />
         <Plugin Enabled="True" Path="%BASEDIR%\ACT.FFXIVPing.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.TTSYukkuri.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.UltraScouter.dll" />
         <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\ACT.DFAssist\ACT.DFAssist.dll" />
     </ActPlugins>
     <XmlSubs />

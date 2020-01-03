@@ -5,21 +5,25 @@ using System.Windows.Forms;
 
 namespace FFActCheck
 {
-	public partial class MainForm : Form
+	public partial class ObsoleteForm : Form
 	{
-		private string _rundir;
-		private string _appdata;
-		private string _basedir;
-		private string _cfgdir;
+		//private string _rundir;
+		//private string _appdata;
+		//private string _basedir;
+		//private string _cfgdir;
 
-		private bool _ok_act = true;
-		private bool _ok_hoz = true;
+		private string _pz_app;			// 사용자 AppData
+		private string _pz_act;         // ACT 디렉터리 (=AppData)
+		private string _pz_cfg;			// ACT의 Config
+
+		private bool _ok_act = true;	// ACT가 OK
+		private bool _ok_hoz = true;	// 호조링이 OK
 
 		private static string[] ConfigRes =
 		{
 			Properties.Resources.cfg_act,
 			Properties.Resources.cfg_fcp,
-			Properties.Resources.cfg_rmop,
+			"",
 			Properties.Resources.cfg_dfa,
 			Properties.Resources.cfg_ping,
 		};
@@ -32,20 +36,20 @@ namespace FFActCheck
 			"ACT.FFXIVPing.config.xml"
 		};
 
-		public MainForm()
+		public ObsoleteForm()
 		{
 			InitializeComponent();
 
 #if DEBUG
-			var prgdir = @"D:\FF14\act-20191118-full";
+			var prgdir = @"D:\FF14\act";
 #else
             var prgdir = Environment.CurrentDirectory;
 #endif
 
-			_rundir = prgdir;
-			_appdata = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-			_basedir = Path.Combine(prgdir, "AppData");
-			_cfgdir = Path.Combine(_basedir, "Advanced Combat Tracker", "Config");
+			_pz_act = prgdir;
+			_pz_cfg = Path.Combine(prgdir, "Config");
+
+			_pz_app = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
 
 			TxtActPath.Text = prgdir;
 
@@ -88,14 +92,14 @@ namespace FFActCheck
 
 		private void TestEnvironment()
 		{
-			string base_act = Path.Combine(_basedir, "Advanced Combat Tracker");
-			string base_hoz = Path.Combine(_basedir, "anoyetta");
+			string base_act = _pz_act;
+			string base_hoz = Path.Combine(_pz_act, "Anoyetta");
 
 			bool ok_act = Directory.Exists(base_act);
 			bool ok_ayo = Directory.Exists(base_hoz);
 
-			_ok_act = CheckJuntion(base_act, Path.Combine(_appdata, "Advanced Combat Tracker"), out string rsn_act);
-			_ok_hoz = CheckJuntion(base_hoz, Path.Combine(_appdata, "anoyetta"), out string rsn_ayo);
+			_ok_act = CheckJuntion(base_act, Path.Combine(_pz_app, "Advanced Combat Tracker"), out string rsn_act);
+			_ok_hoz = CheckJuntion(base_hoz, Path.Combine(_pz_app, "anoyetta"), out string rsn_ayo);
 
 			//
 			LstResult.Items.Clear();
@@ -115,7 +119,7 @@ namespace FFActCheck
 			}
 
 			// 설정파일검사
-			if (!Directory.Exists(_cfgdir))
+			if (!Directory.Exists(_pz_cfg))
 			{
 				LstResult.Items.Add(MakeListViewItem(false, "설정 핑;ㄹ", "설정 디렉터리가 없습니다!"));
 				BtnConfig.Enabled = false;
@@ -126,7 +130,7 @@ namespace FFActCheck
 
 			foreach (var s in ConfigFiles)
 			{
-				var fn = Path.Combine(_cfgdir, s);
+				var fn = Path.Combine(_pz_cfg, s);
 				if (!File.Exists(fn))
 					needconfig = true;
 			}
@@ -139,11 +143,14 @@ namespace FFActCheck
 
 		private void SettingUp()
 		{
+			string base_act = _pz_act;
+			string base_hoz = Path.Combine(_pz_act, "Anoyetta");
+
 			if (!_ok_act)
-				MakeJunction(Path.Combine(_basedir, "Advanced Combat Tracker"), Path.Combine(_appdata, "Advanced Combat Tracker"));
+				MakeJunction(base_act, Path.Combine(_pz_app, "Advanced Combat Tracker"));
 
 			if (!_ok_hoz)
-				MakeJunction(Path.Combine(_basedir, "anoyetta"), Path.Combine(_appdata, "anoyetta"));
+				MakeJunction(base_hoz, Path.Combine(_pz_app, "anoyetta"));
 
 			TestEnvironment();
 
@@ -154,8 +161,8 @@ namespace FFActCheck
 
 		private void ConfigUp()
 		{
-			string basedir = _rundir;
-			string baseunix = _rundir.Replace('\\', '/');
+			string basedir = _pz_act;
+			string baseunix = _pz_act.Replace('\\', '/');
 			string cfghojoring = ChkCfgUseHojoring.Checked ? "True" : "False";
 
 			bool isok = true;
@@ -168,7 +175,7 @@ namespace FFActCheck
 
 				try
 				{
-					File.WriteAllText(_cfgdir + "\\" + ConfigFiles[i], txt, System.Text.Encoding.UTF8);
+					File.WriteAllText(_pz_cfg + "\\" + ConfigFiles[i], txt, System.Text.Encoding.UTF8);
 					LstResult.Items.Add(MakeListViewItem(true, ConfigFiles[i], "처리했습니다"));
 				}
 				catch (Exception)

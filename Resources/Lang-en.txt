@@ -1,0 +1,45 @@
+﻿CheckRuntime=Check runtime
+CreateConfigFile=Create config file
+Language=Language
+SetRuntime=Set runtime
+Title=ACT runtime checker
+UseYukkuri=Use Yukkuri
+ActLocation=ACT Path
+Check=Check
+Config=Config
+Extra=Extra
+// check
+ClickCheck=Click check button first!
+JunctionOk=Ok
+JunctionNotEqual=Indicated another directory or location
+JunctionNotJunction=Another program makes this directory
+JunctionNotExist=Have to setting up
+JunctionFail=Cannot determine setting
+ReinstallAct=Invalid ACT installation. Reinstall please.
+NeedSettingUp=Need setting up. Push Set runtime button
+TestOk=Test Ok
+TestFail=Test FAIL!
+Source=Source
+Target=Target
+ConfigPath=Config path
+ConfigCount=Config count
+ChangeTabToConfig=To build configuration files, use config tab
+FinishSetRuntime=Set up complete
+Success=Success
+Fail=Fail
+// config
+CfgConfigs=Config:
+ItemYukkuri=Use Yukkuri
+ItemUltsco=Use Ultrascouter
+ItemDfassist=Use DFAssist
+ItemPing=Use ping viewer
+// overlay
+CfgOverlay=Overlay:
+ItemHoriz=HORIZOVERLAY
+ItemKagerou=Kagerou overlay
+ItemEnmity=Enable enmity/hate
+ItemEureka=Eureka info
+ItemFish=Fishing helper
+//
+IknowOverwrite=You agree to overwrite whole config files
+CfgWrite=Write!!!

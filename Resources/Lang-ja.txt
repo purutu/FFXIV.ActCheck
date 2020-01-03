@@ -1,0 +1,45 @@
+﻿CheckRuntime=調べる
+CreateConfigFile=コンフィグ ファイル
+Language=言語
+SetRuntime=設定
+Title=ACT Runtime チェカー
+UseYukkuri=Yukkuri 使用
+ActLocation=ACT
+Check=チェック
+Config=コンフィグ
+Extra=その他
+// check
+ClickCheck=調べるボタンから押してください！
+JunctionOk=正常
+JunctionNotEqual=他のディレクトリーに指定されています
+JunctionNotJunction=他のプログラムで作ったディレクトリーです
+JunctionNotExist=設定が必要です
+JunctionFail=設定が確認できません
+ReinstallAct=ACTの調子がおかしいです。 再設置してください
+NeedSettingUp=設定が必要です。設定ボタンを押してください
+TestOk=問題なし
+TestFail=テスト失敗！
+Source=ソース
+Target=ターゲット
+ConfigPath=コンフィグパース
+ConfigCount=コンフィグカウント
+ChangeTabToConfig=コンフィグファイルを作るためにコンフィグタブを利用してください
+FinishSetRuntime=設定を完了しました
+Success=成功
+Fail=失敗
+// config
+CfgConfigs=コンフィグ項目:
+ItemYukkuri=ゆっくり使用
+ItemUltsco=ウルトスカ使用
+ItemDfassist=DFAssist使用
+ItemPing=ネット速度表示
+// overlay
+CfgOverlay=オーバレー:
+ItemHoriz=HORIZOVERLAY
+ItemKagerou=Kagerou overlay
+ItemEnmity=ヘイト/エンミティ表示
+ItemEureka=エウレカ情報
+ItemFish=漁師ツル
+//
+IknowOverwrite=あなたはコンフィグファイルを上書きに同意します
+CfgWrite=コンフィグをセーブします

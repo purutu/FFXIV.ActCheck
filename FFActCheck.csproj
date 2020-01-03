@@ -27,6 +27,10 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <Version>3.0.0</Version>
+    <AssemblyVersion>3.0.0.*</AssemblyVersion>
+    <Deterministic>false</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -61,17 +65,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JunctionPoint.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="CheckForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="CheckForm.Designer.cs">
+      <DependentUpon>CheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Junction.cs" />
+    <Compile Include="JunctionPoint.cs" />
+    <Compile Include="LineDb.cs" />
+    <Compile Include="ObsoleteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObsoleteForm.Designer.cs">
+      <DependentUpon>ObsoleteForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="EnvWork.cs" />
+    <EmbeddedResource Include="CheckForm.resx">
+      <DependentUpon>CheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObsoleteForm.resx">
+      <DependentUpon>ObsoleteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,13 +134,24 @@
     <EmbeddedResource Include="Resources\cfg-fcp.txt" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\cfg-rmop.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\cfg-ping.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cfg-dfa.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Lang-en.txt" />
+    <EmbeddedResource Include="Resources\Lang-ja.txt" />
+    <EmbeddedResource Include="Resources\Lang-ko.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\cfg-rmop-basis-head.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-item-enmity.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-item-eureka.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-item-fish.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-item-horiz.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-item-kagerou.txt" />
+    <EmbeddedResource Include="Resources\cfg-rmop-basis-tail.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

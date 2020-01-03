@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Config>
 	<SettingsSerializer>
-		<ComboBox Name="LocaleUi" Value="한국말" />
+		<ComboBox Name="LocaleUi" Value="English" />
 		<ComboBox Name="LocaleGame" Value="English" />
 		<ComboBox Name="LogBackColor" Value="AliceBlue" />
 		<CheckBox Name="LoggingWholeFATEs" Value="False" />
@@ -9,7 +9,7 @@
 		<TextBox Name="OverlayLocation" Value="1498,0" />
 		<TextBox Name="SelectedFates" Value="" />
 		<CheckBox Name="UseSound" Value="False" />
-		<TextBox Name="SoundFile" Value="%BASEDIR%\AppPlug\ACT.DFAssist\tararararang.wav" />
+		<TextBox Name="SoundFile" Value="%BASEDIR%\Plugins\ACT.DFAssist\tararararang.wav" />
 		<TextBox Name="LogFont" Value="Arial, 11.95" />
 	</SettingsSerializer>
 </Config>

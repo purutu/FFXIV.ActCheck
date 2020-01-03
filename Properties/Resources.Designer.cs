@@ -80,22 +80,18 @@ namespace FFActCheck.Properties {
         }
         
         /// <summary>
-        ///   &lt;?xml version=&quot;1.0&quot;?&gt;
-        ///&lt;PluginConfig xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-        ///  &lt;IsVisible&gt;true&lt;/IsVisible&gt;
-        ///  &lt;IsClickThru&gt;false&lt;/IsClickThru&gt;
-        ///  &lt;OverlayPosition&gt;
-        ///    &lt;X&gt;20&lt;/X&gt;
-        ///    &lt;Y&gt;20&lt;/Y&gt;
-        ///  &lt;/OverlayPosition&gt;
-        ///  &lt;OverlaySize&gt;
-        ///    &lt;Width&gt;300&lt;/Width&gt;
-        ///    &lt;Height&gt;300&lt;/Height&gt;
-        ///  &lt;/OverlaySize&gt;
-        ///  &lt;SortKey&gt;encdps&lt;/SortKey&gt;
-        ///  &lt;SortType&gt;NumericDescending&lt;/SortType&gt;
-        ///  &lt;Overlays&gt;
-        ///    &lt;Overlay Type=&quot;RainbowMage.OverlayPlugin.Overlays.MiniParseO[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;
+        ///&lt;Config&gt;
+        ///	&lt;SettingsSerializer&gt;
+        ///		&lt;ComboBox Name=&quot;LocaleUi&quot; Value=&quot;English&quot; /&gt;
+        ///		&lt;ComboBox Name=&quot;LocaleGame&quot; Value=&quot;English&quot; /&gt;
+        ///		&lt;ComboBox Name=&quot;LogBackColor&quot; Value=&quot;AliceBlue&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;LoggingWholeFATEs&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;UseOverlay&quot; Value=&quot;True&quot; /&gt;
+        ///		&lt;TextBox Name=&quot;OverlayLocation&quot; Value=&quot;1498,0&quot; /&gt;
+        ///		&lt;TextBox Name=&quot;SelectedFates&quot; Value=&quot;&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;UseSound&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;TextBox Name=&quot;SoundFi[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string cfg_dfa {
             get {
@@ -126,14 +122,14 @@ namespace FFActCheck.Properties {
         ///   &lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot; standalone=&quot;yes&quot;?&gt;
         ///&lt;Config&gt;
         ///	&lt;SettingsSerializer&gt;
-        ///		&lt;CheckBox Name=&quot;chkDisableDamageShield&quot; Value=&quot;False&quot; /&gt;
-        ///		&lt;ComboBox Name=&quot;cboLanguage&quot; Value=&quot;English&quot; /&gt;
-        ///		&lt;ComboBox Name=&quot;cboParseFilter&quot; Value=&quot;Party&quot; /&gt;
-        ///		&lt;CheckBox Name=&quot;chkDisableCombinePets&quot; Value=&quot;False&quot; /&gt;
-        ///		&lt;CheckBox Name=&quot;chkScanHP&quot; Value=&quot;True&quot; /&gt;
-        ///		&lt;CheckBox Name=&quot;chkLogAllNetwork&quot; Value=&quot;False&quot; /&gt;
-        ///		&lt;CheckBox Name=&quot;chkDisableCombatLog&quot; Value=&quot;False&quot; /&gt;
-        ///		&lt;TextBox Name=&quot;txtLogFileDirectory&quot; Value[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///		&lt;NumericUpDown Name=&quot;numericUpDownX&quot; Value=&quot;918&quot; /&gt;
+        ///		&lt;NumericUpDown Name=&quot;numericUpDownY&quot; Value=&quot;63&quot; /&gt;
+        ///		&lt;TrackBar Name=&quot;trackBarOpacity&quot; Value=&quot;0&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;checkBoxClickthrough&quot; Value=&quot;True&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;checkBoxShowOverlay&quot; Value=&quot;True&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;checkBoxAutoHide&quot; Value=&quot;False&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;checkBoxCheckUpdate&quot; Value=&quot;True&quot; /&gt;
+        ///		&lt;CheckBox Name=&quot;checkBoxNotifyStableOnl[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string cfg_ping {
             get {
@@ -142,26 +138,156 @@ namespace FFActCheck.Properties {
         }
         
         /// <summary>
-        ///   &lt;?xml version=&quot;1.0&quot;?&gt;
-        ///&lt;PluginConfig xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;
-        ///  &lt;IsVisible&gt;true&lt;/IsVisible&gt;
-        ///  &lt;IsClickThru&gt;false&lt;/IsClickThru&gt;
-        ///  &lt;OverlayPosition&gt;
-        ///    &lt;X&gt;20&lt;/X&gt;
-        ///    &lt;Y&gt;20&lt;/Y&gt;
-        ///  &lt;/OverlayPosition&gt;
-        ///  &lt;OverlaySize&gt;
-        ///    &lt;Width&gt;300&lt;/Width&gt;
-        ///    &lt;Height&gt;300&lt;/Height&gt;
-        ///  &lt;/OverlaySize&gt;
-        ///  &lt;SortKey&gt;encdps&lt;/SortKey&gt;
-        ///  &lt;SortType&gt;NumericDescending&lt;/SortType&gt;
-        ///  &lt;Overlays&gt;
-        ///    &lt;Overlay Type=&quot;RainbowMage.OverlayPlugin.Overlays.MiniParseO[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
-        internal static string cfg_rmop {
+        internal static string cfg_rmop_basis_head {
             get {
-                return ResourceManager.GetString("cfg-rmop", resourceCulture);
+                return ResourceManager.GetString("cfg_rmop_basis_head", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_basis_tail {
+            get {
+                return ResourceManager.GetString("cfg_rmop_basis_tail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_item_enmity {
+            get {
+                return ResourceManager.GetString("cfg_rmop_item_enmity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_item_eureka {
+            get {
+                return ResourceManager.GetString("cfg_rmop_item_eureka", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_item_fish {
+            get {
+                return ResourceManager.GetString("cfg_rmop_item_fish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_item_horiz {
+            get {
+                return ResourceManager.GetString("cfg_rmop_item_horiz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string cfg_rmop_item_kagerou {
+            get {
+                return ResourceManager.GetString("cfg_rmop_item_kagerou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   CheckRuntime=Check runtime
+        ///CreateConfigFile=Create config file
+        ///Language=Language
+        ///SetRuntime=Set runtime
+        ///Title=ACT runtime checker
+        ///UseYukkuri=Use Yukkuri
+        ///ActLocation=ACT Path
+        ///Check=Check
+        ///Config=Config
+        ///Extra=Extra
+        ///// check
+        ///ClickCheck=Click check button first!
+        ///JunctionOk=Ok
+        ///JunctionNotEqual=Indicated another directory or location
+        ///JunctionNotJunction=Another program makes this directory
+        ///JunctionNotExist=Have to setting up
+        ///JunctionFail=Cannot determine setting
+        ///ReinstallAct=Invalid ACT installati[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Lang_en {
+            get {
+                return ResourceManager.GetString("Lang_en", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   CheckRuntime=調べる
+        ///CreateConfigFile=コンフィグ ファイル
+        ///Language=言語
+        ///SetRuntime=設定
+        ///Title=ACT Runtime チェカー
+        ///UseYukkuri=Yukkuri 使用
+        ///ActLocation=ACT
+        ///Check=チェック
+        ///Config=コンフィグ
+        ///Extra=その他
+        ///// check
+        ///ClickCheck=調べるボタンから押してください！
+        ///JunctionOk=正常
+        ///JunctionNotEqual=他のディレクトリーに指定されています
+        ///JunctionNotJunction=他のプログラムで作ったディレクトリーです
+        ///JunctionNotExist=設定が必要です
+        ///JunctionFail=設定が確認できません
+        ///ReinstallAct=ACTの調子がおかしいです。 再設置してください
+        ///NeedSettingUp=設定が必要です。設定ボタンを押してください
+        ///TestOk=問題なし
+        ///TestFail=テスト失敗！
+        ///Source=ソース
+        ///Target=ターゲット
+        ///ConfigPath=コンフィグパース        ///[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Lang_ja {
+            get {
+                return ResourceManager.GetString("Lang_ja", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   CheckRuntime=검사하기
+        ///CreateConfigFile=설정 파일 만들기
+        ///Language=언어
+        ///SetRuntime=설정하기
+        ///Title=ACT 실행 환경 점검
+        ///UseYukkuri=Yukkuri 사용
+        ///ActLocation=ACT 경로
+        ///Check=검사
+        ///Config=환경설정
+        ///Extra=그밖에
+        ///// check
+        ///ClickCheck=검사하기 버튼을 먼저 누르세요!
+        ///JunctionOk=정상입니다
+        ///JunctionNotEqual=다른 위치로 지정되어 있습니다
+        ///JunctionNotJunction=다른 프로그램에서 만든 디렉터리입니다
+        ///JunctionNotExist=설정이 필요합니다
+        ///JunctionFail=설정을 확인할 수 없습니다
+        ///ReinstallAct=ACT가 이상합니다. 다시 설치하세요
+        ///NeedSettingUp=설정이 필요합니다. 설정하기를 누르세요
+        ///TestOk=문제없음
+        ///TestFail=검사가 실패함
+        ///Source=원본
+        ///Target=대상
+        ///ConfigPath=환경설정 경로
+        ///C[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        /// </summary>
+        internal static string Lang_ko {
+            get {
+                return ResourceManager.GetString("Lang_ko", resourceCulture);
             }
         }
         

@@ -19,7 +19,7 @@
         <NumericUpDown Name="nudTimerScale2" Value="1" />
         <NumericUpDown Name="nudTimersOpacity" Value="100" />
         <NumericUpDown Name="nudTimersOpacity2" Value="100" />
-        <NumericUpDown Name="nudTimerWarning" Value="8" />
+        <NumericUpDown Name="nudTimerWarning" Value="2" />
         <CheckBox Name="cbGlobalMaxLimit" Value="False" />
         <CheckBox Name="cbTLIncomingDamage" Value="True" />
         <CheckBox Name="cbTLOutDamage" Value="True" />
@@ -29,6 +29,7 @@
         <ComboBox Name="ddlTLGrouping" Value="" />
         <NumericUpDown Name="nudTLSampleSize" Value="10" />
         <CheckBox Name="cbParseCt" Value="False" />
+        <CheckBox Name="cbNotificationBlink" Value="False" />
         <CheckBox Name="cbAutoCheck" Value="True" />
         <CheckBox Name="cbbMiniParse" Value="False" />
         <CheckBox Name="cbbShowTimers" Value="False" />
@@ -90,7 +91,7 @@
         <CheckBox Name="cbIdleTimerEnd" Value="True" />
         <CheckBox Name="cbReverseSort" Value="True" />
         <CheckBox Name="cbTableCommas" Value="True" />
-        <NumericUpDown Name="nudIdleLimit" Value="30" />
+        <NumericUpDown Name="nudIdleLimit" Value="60" />
         <NumericUpDown Name="nudUpdateValue" Value="5" />
         <CheckBox Name="cbMinEncBox" Value="False" />
         <CheckBox Name="cbMiniClickThrough" Value="False" />
@@ -167,9 +168,9 @@
         <RadioButton Name="rbSParseFull" Value="False" />
         <RadioButton Name="rbSParseNone" Value="True" />
         <TextBox Name="tbFeedbackEmail" Value="&lt;Optional return email address&gt;" />
-        <Form Name="FormActMain" X="2867" Y="325" W="973" H="719" WindowState="Normal" />
+        <Form Name="FormActMain" X="2745" Y="305" W="1094" H="741" WindowState="Normal" />
         <Form Name="FormMiniParse" X="0" Y="0" W="160" H="255" WindowState="Normal" />
-        <Form Name="FormUpdater" X="1013" Y="294" W="620" H="466" WindowState="Normal" />
+        <Form Name="FormUpdater" X="1193" Y="349" W="620" H="466" WindowState="Normal" />
         <Form Name="FormCombatantSearch" X="0" Y="0" W="585" H="303" WindowState="Normal" />
         <Form Name="FormResistsDeathReport" X="0" Y="0" W="746" H="327" WindowState="Normal" />
         <Form Name="FormSpellRecastCalc" X="0" Y="0" W="834" H="294" WindowState="Normal" />
@@ -177,23 +178,23 @@
         <Form Name="FormSpellTimersPanel" X="3578" Y="20" W="219" H="407" WindowState="Normal" />
         <Form Name="FormSpellTimersPanel2" X="0" Y="0" W="219" H="406" WindowState="Normal" />
         <Form Name="FormEncounterLogs" X="815" Y="117" W="899" H="757" WindowState="Normal" />
-        <Form Name="FormPerformanceWizard" X="78" Y="78" W="528" H="402" WindowState="Normal" />
-        <Form Name="FormXmlSettingsIO" X="104" Y="104" W="812" H="444" WindowState="Normal" />
+        <Form Name="FormPerformanceWizard" X="26" Y="26" W="528" H="402" WindowState="Normal" />
+        <Form Name="FormXmlSettingsIO" X="52" Y="52" W="812" H="444" WindowState="Normal" />
         <Form Name="FormTimeLine" X="462" Y="295" W="1148" H="572" WindowState="Normal" />
         <Form Name="FormEncounterVcr" X="0" Y="0" W="1122" H="652" WindowState="Normal" />
-        <Form Name="FormSqlQuery" X="130" Y="130" W="827" H="541" WindowState="Normal" />
-        <Form Name="FormByCombatantLookup" X="156" Y="156" W="991" H="624" WindowState="Normal" />
-        <Form Name="FormStartupWizard" X="182" Y="182" W="539" H="401" WindowState="Normal" />
-        <Form Name="FormAlliesEdit" X="208" Y="208" W="267" H="414" WindowState="Normal" />
+        <Form Name="FormSqlQuery" X="78" Y="78" W="827" H="541" WindowState="Normal" />
+        <Form Name="FormByCombatantLookup" X="104" Y="104" W="991" H="624" WindowState="Normal" />
+        <Form Name="FormStartupWizard" X="130" Y="130" W="539" H="401" WindowState="Normal" />
+        <Form Name="FormAlliesEdit" X="156" Y="156" W="267" H="414" WindowState="Normal" />
         <Form Name="FormAvoidanceReport" X="0" Y="0" W="761" H="479" WindowState="Normal" />
-        <Form Name="FormExportFormat" X="234" Y="234" W="777" H="565" WindowState="Normal" />
+        <Form Name="FormExportFormat" X="182" Y="182" W="777" H="565" WindowState="Normal" />
         <Form Name="FormImportProgress" X="200" Y="200" W="692" H="236" WindowState="Normal" />
         <Form Name="FormScratchRange" X="0" Y="0" W="765" H="299" WindowState="Normal" />
-        <Form Name="FormCustomTriggerBenchmark" X="26" Y="26" W="1397" H="597" WindowState="Normal" />
+        <Form Name="FormCustomTriggerBenchmark" X="208" Y="208" W="1397" H="597" WindowState="Normal" />
         <TrackBar Name="tbarTtsVol" Value="100" />
         <TrackBar Name="tbarWavVol" Value="100" />
-        <Panel Name="pGraphing" W="713" H="181" />
-        <Panel Name="pLeftView" W="234" H="650" />
+        <Panel Name="pGraphing" W="834" H="181" />
+        <Panel Name="pLeftView" W="234" H="671" />
         <CheckedListBox Name="clbZD">
             <Item Checked="False">EncId</Item>
             <Item Checked="True">Title</Item>
@@ -206,8 +207,8 @@
             <Item Checked="True">Kills</Item>
             <Item Checked="True">Deaths</Item>
         </CheckedListBox>
-        <Button Name="btnEDSort" Text="EncDPS" Font="Gulim" Style="Regular" Size="9" />
-        <Button Name="btnEDSort2" Text="Duration" Font="Gulim" Style="Regular" Size="9" />
+        <Button Name="btnEDSort" Text="EncDPS" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
+        <Button Name="btnEDSort2" Text="Duration" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
         <CheckedListBox Name="clbED">
             <Item Checked="False">EncId</Item>
             <Item Checked="False">Ally</Item>
@@ -285,8 +286,8 @@
             <Item Checked="False">CritDirectHitCount</Item>
             <Item Checked="True">CritDirectHitPct</Item>
         </CheckedListBox>
-        <Button Name="btnMDSort" Text="Damage" Font="Gulim" Style="Regular" Size="9" />
-        <Button Name="btnMDSort2" Text="Duration" Font="Gulim" Style="Regular" Size="9" />
+        <Button Name="btnMDSort" Text="Damage" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
+        <Button Name="btnMDSort2" Text="Duration" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
         <CheckedListBox Name="clbDT">
             <Item Checked="False">EncId</Item>
             <Item Checked="False">Attacker</Item>
@@ -325,8 +326,8 @@
             <Item Checked="False">CritDirectHitCount</Item>
             <Item Checked="True">CritDirectHitPct</Item>
         </CheckedListBox>
-        <Button Name="btnATSort" Text="Time" Font="Gulim" Style="Regular" Size="9" />
-        <Button Name="btnATSort2" Text="Time" Font="Gulim" Style="Regular" Size="9" />
+        <Button Name="btnATSort" Text="Time" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
+        <Button Name="btnATSort2" Text="Time" Font="Microsoft Sans Serif" Style="Regular" Size="9" />
         <CheckedListBox Name="clbAT">
             <Item Checked="False">EncId</Item>
             <Item Checked="True">Time</Item>
@@ -438,38 +439,39 @@
         <Boolean Name="suppressCtBenchPopup" Value="True" />
         <DirectoryInfo Name="folderActfiles" Value="C:\" />
         <DirectoryInfo Name="folderExports" Value="C:\" />
-        <DirectoryInfo Name="folderLogs" Value="%BASEDIR%\AppData\Advanced Combat Tracker\FFXIVLogs" />
-        <DirectoryInfo Name="folderMedia" Value="%BASEDIR%\AppPlug\OverlayPlugin\cactbot\resources\sounds\zzz" />
+        <DirectoryInfo Name="folderLogs" Value="%BASEDIR%\FFXIVLogs" />
+        <DirectoryInfo Name="folderMedia" Value="%BASEDIR%\Media\Sound" />
     </SettingsSerializer>
     <SParseList />
     <TextFormats />
     <MacroExports />
     <CustomTriggers>
-        <Trigger Active="True" Regex="Battle commencing in (5|10|15|17|18|20)" SoundData="$1秒前" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="Battle commencing in (5|10|12|15|17|18|20)" SoundData="$1秒前" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
         <Trigger Active="True" Regex="has initiated a ready check" SoundData="Ready check" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
         <Trigger Active="True" Regex="Ready check complete" SoundData="Check complete" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
         <Trigger Active="True" Regex="The minions of an extraordinarily powerful mark are on the hunt for prey" SoundData="まだいる！" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
         <Trigger Active="True" Regex="You sense the presence of a powerful mark" SoundData="なんか出た！" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
-        <Trigger Active="True" Regex="You suffer the effect of Abandonment" SoundData="孤独感" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
-        <Trigger Active="True" Regex="You suffer the effect of Prey." SoundData="餌になった" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
-        <Trigger Active="True" Regex="You suffer the effect of Searing Wind" SoundData="灼熱" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="レディチェックを終了しました" SoundData="Check complete" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="レディチェックを開始しました" SoundData="Ready check" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="強大なリスキーモブの気配を感じる……！" SoundData="なんか出た！" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
+        <Trigger Active="True" Regex="戦闘開始まで(5|10|15|17|18|20)秒！" SoundData="$1秒前" SoundType="3" CategoryRestrict="False" Category=" General" Timer="False" TimerName="" Tabbed="False" />
     </CustomTriggers>
-    <SpellTimers/>
+    <SpellTimers />
     <TimerWhiteList>
         <Character>You</Character>
     </TimerWhiteList>
     <RenameFix />
     <AbilityRedirectFix />
     <OdbcHacks />
-    <ActPlugins>
-        <Plugin Enabled="True" Path="%BASEDIR%\AppData\Advanced Combat Tracker\Plugins\FFXIV_ACT_Plugin.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\OverlayPlugin\OverlayPlugin.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\cactbot\CactbotOverlay.dll" />
-        <Plugin Enabled="%CFGHOJORING%" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.TTSYukkuri.dll" />
-        <Plugin Enabled="False" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.UltraScouter.dll" />
-        <Plugin Enabled="False" Path="%BASEDIR%\AppPlug\ACT.Hojoring\ACT.SpecialSpellTimer.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\ACT.FFXIVPing.dll" />
-        <Plugin Enabled="True" Path="%BASEDIR%\AppPlug\ACT.DFAssist\ACT.DFAssist.dll" />
-    </ActPlugins>
     <XmlSubs />
+    <ActPlugins>
+        <Plugin Enabled="True" Path="%BASEDIR%\Plugins\FFXIV_ACT_Plugin.dll" />
+        <Plugin Enabled="True" Path="%BASEDIR%\Plugins\OverlayPlugin\OverlayPlugin.dll" />
+        <Plugin Enabled="True" Path="%BASEDIR%\Plugins\cactbot\CactbotOverlay.dll" />
+        <Plugin Enabled="%CFGYUKKURI%" Path="%BASEDIR%\Plugins\ACT.Hojoring\ACT.TTSYukkuri.dll" />
+        <Plugin Enabled="%CFGULTSCO%" Path="%BASEDIR%\Plugins\ACT.Hojoring\ACT.UltraScouter.dll" />
+        <Plugin Enabled="False" Path="%BASEDIR%\Plugins\ACT.Hojoring\ACT.SpecialSpellTimer.dll" />
+        <Plugin Enabled="%CFGPING%" Path="%BASEDIR%\ACT.FFXIVPing.dll" />
+        <Plugin Enabled="%CFGDFASSIST%" Path="%BASEDIR%\Plugins\ACT.DFAssist\ACT.DFAssist.dll" />
+    </ActPlugins>
 </Config>

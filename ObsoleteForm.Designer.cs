@@ -1,6 +1,6 @@
 ﻿namespace FFActCheck
 {
-    partial class MainForm
+    partial class ObsoleteForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
 			this.components = new System.ComponentModel.Container();
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ObsoleteForm));
 			this.BtnTest = new System.Windows.Forms.Button();
 			this.BtnSetting = new System.Windows.Forms.Button();
 			this.BtnClose = new System.Windows.Forms.Button();
